@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <div class="transactions container">
+    <div class="transactions__header">
+      <div class="transactions__title">
+        <h1>لیست تراکنش ها</h1>
+      </div>
+      <div class="transactions__loaded">
+        <button class="btn btn__primary" id="loaded">بارگذاری تراکنش ها</button>
+      </div>
+      <div class="transactions__search hidden">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="جستجو تراکنش "
+        />
+        <span><i class="fas fa-search"></i></span>
+      </div>
+    </div>
+    <div class="transactions__list hidden">
+      <div class="table">
+        <h3 class="table__title">لیست&nbsp;تراکنش&nbsp;های&nbsp;شما</h3>
+        <div class="table__header">
+          <div class="header-tr">
+            <p>ردیف</p>
+            <p>نوع&nbsp;تراکنش</p>
+            <p class="price">
+              مبلغ
+              <span class="price__sort-icon"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </p>
+            <p>شماره&nbsp;پیگیری</p>
+            <p class="date">
+              تاریخ&nbsp;تراکنش
+              <span class="date__sort-icon"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </p>
+          </div>
+        </div>
+        <!-- <div class="table__body">
+          <div class="body-tr">
+              <p>1</p>
+              <p>افزایش&nbsp;اعتبار</p>
+              <p>1,000,000</p>
+              <p>12345678</p>
+              <p>1403/05/04</p>
+          </div>
+        </div> -->
+        <div class="table__body"></div>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -9,7 +9,7 @@ const priceIcon = document.querySelector(".price__sort-icon");
 const date = document.querySelector(".date");
 const dateIcon = document.querySelector(".date__sort-icon");
 
-// ------------------- API Transactions --------------------
+// ------------------- API Transactions -------------------
 
 class API {
   static getData() {

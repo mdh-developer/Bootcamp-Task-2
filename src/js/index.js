@@ -58,7 +58,7 @@ class UI {
     searchInput.addEventListener("input", (e) => {
       const query = e.target.value;
       API.getData()
-        .get(`/transactions?refId_like=${query}&_sort=price&_order=desc&`)
+        .get(`/transactions?refId_like=${query}&_sort=price&_order=desc`)
         .then((res) => this.createDataTable(res.data))
         .catch((err) => console.log(err));
     });
